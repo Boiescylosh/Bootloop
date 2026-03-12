@@ -45,6 +45,12 @@
 
 ---
 
+# Script Image
+
+![preview](https://d.top4top.io/p_372387fqj0.jpg)
+
+![preview](https://e.top4top.io/p_3723cpy8q1.jpg)
+
 # Information
 > **BACA:** Alat ini dibuat hanya untuk tujuan edukasi dan pengujian sistem pribadi (Self-Testing). Penggunaan alat ini untuk tujuan ilegal atau merugikan pihak lain. Author tidak bertanggung jawab atas segala kerusakan yang ditimbulkan.
 
