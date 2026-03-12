@@ -1,5 +1,5 @@
-// Mau ngapain nyet?
-// Pasti mau nyolong code?
+# Mau ngapain nyet?
+# Pasti mau nyolong code?
 
 import os
 import sys
