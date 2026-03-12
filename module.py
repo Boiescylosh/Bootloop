@@ -1,4 +1,4 @@
-// Nyari mulu kayak yang dapet aja
+# Nyari mulu kayak yang dapet aja
 
 MAP_ID = {
     'root': [0xAF, 0x12, 0xCC, 0x99],
