@@ -77,8 +77,6 @@ Kondisi bootloop yang dibiarkan terus-menerus akan mengakibatkan:
 
 ---
 
-# Script Image
-
 ![preview](https://d.top4top.io/p_372387fqj0.jpg)
 
 ![preview](https://e.top4top.io/p_3723cpy8q1.jpg)
