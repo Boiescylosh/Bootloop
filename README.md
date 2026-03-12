@@ -8,11 +8,11 @@ Dokumentasi ini menjelaskan mekanisme kegagalan sistem yang menyebabkan siklus b
 
 | Tahap | Status | Aksi Sistem |
 | :--- | :--- | :--- |
-| **1. Power On** | Start | Bootloader menginisialisasi Hardware. |
-| **2. Kernel Load** | Processing | Sistem mencoba memuat Kernel & Partisi `/system`. |
-| **3. Validation** | **CRITICAL** | Terdeteksi file korup, hilang, atau *permission error*. |
-| **4. Watchdog** | Panic | Sistem keamanan mendeteksi kegagalan 'init' process. |
-| **5. Reboot** | Loop | Perangkat dipaksa restart dan kembali ke Tahap 1. |
+| **Power On** | *Start* | Bootloader menginisialisasi Hardware. |
+| **Kernel Load** | *Processing* | Sistem mencoba memuat Kernel & Partisi `/system`. |
+| **Validation** | *Critical* | Terdeteksi file korup, hilang, atau *permission error*. |
+| **Watchdog** | *Panic* | Sistem keamanan mendeteksi kegagalan 'init' process. |
+| **Reboot** | *Loop* | Perangkat dipaksa restart dan kembali ke Tahap 1. |
 
 ---
 
