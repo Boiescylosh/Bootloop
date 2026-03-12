@@ -1,3 +1,35 @@
+# Diagnostics & System Flow
+
+Dokumentasi ini menjelaskan mekanisme kegagalan sistem yang menyebabkan siklus booting tanpa akhir.
+
+---
+
+# Siklus Kerja (The Bootloop Cycle)
+
+| Tahap | Status | Aksi Sistem |
+| :--- | :--- | :--- |
+| **1. Power On** | Start | Bootloader menginisialisasi Hardware. |
+| **2. Kernel Load** | Processing | Sistem mencoba memuat Kernel & Partisi `/system`. |
+| **3. Validation** | **CRITICAL** | Terdeteksi file korup, hilang, atau *permission error*. |
+| **4. Watchdog** | Panic | Sistem keamanan mendeteksi kegagalan 'init' process. |
+| **5. Reboot** | Loop | Perangkat dipaksa restart dan kembali ke Tahap 1. |
+
+---
+
+# Dampak Terhadap Perangkat 
+
+Kondisi bootloop yang dibiarkan terus-menerus akan mengakibatkan:
+
+1. **Battery Exhaustion:** Konsumsi daya melonjak drastis karena proses booting adalah fase terberat bagi CPU.
+2. **Thermal Overheat:** Beban kerja konstan tanpa jeda pendinginan membuat komponen internal panas.
+3. **Data Inaccessible:** Enkripsi partisi data tidak bisa terbuka, sehingga file user terkunci di dalam.
+4. **Hardware Stress:** Potensi kerusakan permanen pada memori internal (eMMC/UFS) akibat siklus baca/tulis yang gagal.
+
+---
+
+> **Catatan Teknis:** Bootloop seringkali disebabkan oleh modifikasi sistem yang tidak kompatibel atau kegagalan saat proses *OTA Update*.
+
+
 # WHAT IS A BOOTLOOP 
 **Bootloop** itu sebenarnya kondisi di mana perangkat (kayak HP atau PC) gagal masuk ke sistem dan malah restart terus-menerus di tampilan awal. Nah, tools Bootloop ini fungsinya buat ngetes lewat file biner (.exe). hasil rancangan ini biar bisa eksperimen atau prank "error" di Virtual Box, biar lu bisa paham gimana sistem bereaksi tanpa perlu ngerusak device asli.
 
